@@ -160,7 +160,7 @@ main {
     width: 100%;
 }
 
-.about_text h4 {
+.about_text h3 {
     font-size: 44px;
     line-height: 1.38;
     padding: 40px 0px 20px 0px;
@@ -196,7 +196,7 @@ main {
     border-top-right-radius: 45px;
 }
 
-.menus h4 {
+.menus h3 {
     color: #d30202;
     margin: -14px 0px 15px 14px;
     font-size: 38px;
@@ -391,12 +391,10 @@ main {
 
     .main_top {
         padding: 48px 0px;
-        text-align: center;
     }
 
     .main_top h2 {
         font-size: 50px;
-        margin: 0 -16px;
     }
 
     .main_ja p {
@@ -418,21 +416,12 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-    .header_slider,
     .about_img {
         display: none;
     }
 
     .header_wrap .header_logo {
         width: 187px;
-    }
-
-    .header_slider_sp {
-        display: block;
-    }
-
-    .header_slider_sp img {
-        max-width: 100%;
     }
 
     .main_container {
@@ -444,6 +433,7 @@ main {
         padding-top: 24px;
         padding-bottom: 16px;
         letter-spacing: 0.02em;
+        margin: 0 -16px;
     }
 
     .main_ja p {
@@ -472,7 +462,7 @@ main {
         width: 100%;
     }
 
-    .about_text h4 {
+    .about_text h3 {
         font-size: 36px;
         padding: 28px 0px 12px 0px;
     }
@@ -491,7 +481,6 @@ main {
     }
 
     .item_logo {
-        text-align: center;
         padding: 32px 0px 16px 0px;
         height: 45px;
     }
@@ -509,18 +498,11 @@ main {
         width: 100%;
     }
 
-    .menus img {
-        border-top-right-radius: 45px;
-    }
-
-    .menus h4 {
-        color: #d30202;
-        margin: -14px 0px 15px 14px;
+    .menus h3 {
         font-size: 40px;
     }
 
     .menus p {
-        font-size: 17px;
         line-height: 1.65;
         padding-bottom: 48px;
     }
@@ -540,16 +522,20 @@ main {
     }
 
     .gallery_logo {
-        text-align: center;
         padding: 40px 0px 20px 0px;
         height: 45px;
     }
 
     /* イベント */
+    .event_table table,
+    .event_table tbody,
+    .event_table tr {
+        display: block;
+    }
 
     .event_table_item {
-        margin: auto;
-        padding: 16px 0px;
+        margin: 0;
+        padding: 16px;
         font-size: 16px;
         line-height: 1;
     }
@@ -562,17 +548,11 @@ main {
         text-decoration: underline;
     }
 
-    .event_table {
-        border: 3.5px solid #4f260b;
-        background-color: #fff;
-    }
-
     .event_table_item td {
         display: block;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        max-width: 290px;
     }
 
     .event_date {
@@ -587,9 +567,7 @@ main {
     /* アクセス */
 
     .map {
-        width: 100%;
         height: 192px;
-        display: block;
     }
 
     /* フッター */
@@ -603,14 +581,11 @@ main {
     }
 
     .footer_logo {
-        width: 226px;
         padding-bottom: 20px;
     }
 
     .footer_items p {
         font-size: 18px;
-        line-height: 1.95;
-        color: black;
     }
 
     .small {
@@ -618,7 +593,6 @@ main {
     }
 
     .btn {
-        position: fixed;
         bottom: 16px;
         right: 16px;
         width: 100px;
