@@ -209,11 +209,6 @@ main {
 
 /* ギャラリー */
 
-.gallery_img {
-    display: flex;
-    /* width: 20%; */
-}
-
 .gallery_logo {
     text-align: center;
     padding: 80px 0px 20px 0px;
@@ -609,12 +604,10 @@ main {
 }
 
 .slick-next:before {
-    content: "→";
     display: none;
 }
 
 .slick-prev:before {
-    content: "←";
     display: none;
 }
 
