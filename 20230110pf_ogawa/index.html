@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,15 @@
     ひとつひとつの伝わり方を考えてデザインしていきます">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2? family= Zen+Kaku+Gothic+New:wght@300;400;500;700;900 & display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -108,13 +111,13 @@
                     <img src="image/about@2x.png" alt="About">
                 </h2>
                 <div class="about">
-                    <!-- <div class="about_img">
+                    <div class="about_img">
                         <img src="image/about_pc@2x.png" alt="紅葉の公園で娘と息子と手をつなぐ">
-                    </div> -->
-                    <picture class="about_img">
-                        <source srcset="image/about_sp@2x.png" media="(max-width: 767px)">
-                        <img src="image/about_pc@2x.png" alt="紅葉の公園で娘と息子と手をつなぐ">
-                    </picture>
+                    </div>
+                    <div class="aboutsp_img">
+                        <img src="image/about_sp@2x.png" alt="">
+                    </div>
+
                     <div class="about_sentence">
                         <div class="name">
                             <p>Ogawa Akiko</p>
@@ -202,34 +205,36 @@
             </div>
         </section>
 
-        <footer>
-            <div class="footer_wrap">
-                <div class="footer_logos">
-                    <div class="footer_logo"><a href="#header"><img src="image/logo@2x.png" alt="ogawa design"></a>
-                    </div>
-                    <div class="small">
-                        <small>&copy;2022 ogawa design</small>
-                    </div>
-                </div>
-                <div class="footer_nav">
-                    <ul>
-                        <li><a href="">Works</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#motif">Motif</a></li>
-                        <li><a href="#dairy">Dairy</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="top">
-                <a href="#header"><img src="image/top@2x.png" alt="topへ"></a>
-            </div>
-
-        </footer>
-
-
     </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_logos">
+                <div class="footer_logo"><a href="#header"><img src="image/logo@2x.png" alt="ogawa design"></a>
+                </div>
+                <div class="small">
+                    <small>&copy;2022 ogawa design</small>
+                </div>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#motif">Motif</a></li>
+                    <li><a href="#dairy">Dairy</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top">
+            <a href="#header"><img src="image/top@2x.png" alt="topへ"></a>
+        </div>
+
+    </footer>
+
+
+
     <script>
         $(function () {
             //ここの中に記述
@@ -242,18 +247,29 @@
 
             $('.dairy').slick({
                 infinite: true,
-                slidesToShow: 6,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 arrows: false,
                 autoplay: 2000,
                 centerMode: true,
-                centerPadding: '100px',
+                centerPadding: '7%',
                 responsive: [
+                    {
+                        breakpoint: 1101,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 3,
-                            slidesToScroll: 1
+                        }
+                    }, {
+                        breakpoint: 426,
+                        settings: {
+                            slidesToShow: 2,
+                            // centerMode: false,
                         }
                     }
                 ]
@@ -270,6 +286,21 @@
                 infinite: true,
                 variableWidth: true,
                 arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1101,
+                        settings: {
+                            slidesToShow: 3,
+                            centerPadding: '10%',
+                        }
+                    }, {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            centerPadding: '5%',
+                        }
+                    }
+                ]
             })
 
         });
