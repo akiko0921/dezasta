@@ -94,7 +94,8 @@
     /* margin: 0 10px; */
 }
 
-.works_slider .slick-current {
+.works_slider .slick-current,
+.works_slider .is-active-next {
     opacity: 1;
     transform: scale(1);
     padding-bottom: 30px;

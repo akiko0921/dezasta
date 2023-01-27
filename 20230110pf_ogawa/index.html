@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -27,10 +27,10 @@
 <body>
     <header id="header">
         <div class="header_wrap">
-            <h1 class="header_logo"><a href="#header"><img src="image/logo@2x.png" alt="ogawa design"></a></h1>
+            <h1 class="header_logo"><a href="index.html"><img src="image/logo@2x.png" alt="ogawa design"></a></h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">Works</a></li>
+                    <li><a href="works/index.html">Works</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#motif">Motif</a></li>
@@ -41,7 +41,7 @@
             <div class="sp_btn"><span></span></div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="">Works</a></li>
+                    <li><a href="works/index.html">Works</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#motif">Motif</a></li>
@@ -88,16 +88,17 @@
                 <img src="image/works@2x.png" alt="Works">
             </h2>
             <div class="slider_area">
-                <div class="works_slider">
-                    <div><a href=""><img src="image/work5@2x.png" alt="美容室ＬＰサイトデザイン"></a></div>
-                    <div><a href=""><img src="image/work4@2x.png" alt="企業ＨＰサイトデザイン"></a></div>
-                    <div><a href=""><img src="image/workscode@2x.png" alt="カフェサイトコーディング"></a></div>
-                    <div><a href=""><img src="image/work3@2x.png" alt="スクールバナーデザイン"></a></div>
-                    <div><a href=""><img src="image/work2@2x.png" alt="イベントバナーデザイン"></a></div>
-                    <div><a href=""><img src="image/work1@2x.png" alt="化粧品バナーデザイン"></a></div>
+                <div class="works_slider js-slider">
+                    <div><a href="works/works5.html"><img src="image/work5@2x.png" alt="美容室ＬＰサイトデザイン"></a></div>
+                    <div><a href="works/works4.html"><img src="image/work4@2x.png" alt="企業ＨＰサイトデザイン"></a></div>
+                    <div><a href="works/workscode.html"><img src="image/workscode@2x.png" alt="カフェサイトコーディング"></a></div>
+                    <div><a href="works/workspf.html"><img src="image/workpf@2x.png" alt="ポートフォリオサイト"></a></div>
+                    <div><a href="works/works3.html"><img src="image/work3@2x.png" alt="スクールバナーデザイン"></a></div>
+                    <div><a href="works/works2.html"><img src="image/work2@2x.png" alt="イベントバナーデザイン"></a></div>
+                    <div><a href="works/works1.html"><img src="image/work1@2x.png" alt="化粧品バナーデザイン"></a></div>
                 </div>
             </div>
-            <a href="" class="view_more">
+            <a href="works/index.html" class="view_more">
                 <img src="image/sub@2x.png" alt="蝶結び">
                 <p>view more</p>
                 <div class="right_arrow"></div>
@@ -210,7 +211,7 @@
     <footer>
         <div class="footer_wrap">
             <div class="footer_logos">
-                <div class="footer_logo"><a href="#header"><img src="image/logo@2x.png" alt="ogawa design"></a>
+                <div class="footer_logo"><a href="index.html"><img src="image/logo@2x.png" alt="ogawa design"></a>
                 </div>
                 <div class="small">
                     <small>&copy;2022 ogawa design</small>
@@ -218,7 +219,7 @@
             </div>
             <div class="footer_nav">
                 <ul>
-                    <li><a href="">Works</a></li>
+                    <li><a href="works/index.html">Works</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#motif">Motif</a></li>
@@ -303,7 +304,32 @@
                 ]
             })
 
+            const $slider = $(".js-slider");
+
+            $slider.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+                $slider.find(".slick-slide").each((index, el) => {
+                    const $this = $(el),
+                        slickindex = $this.attr("data-slick-index");
+                    if (nextSlide == slick.slideCount - 1 && currentSlide == 0) {
+                        if (slickindex == "-1") {
+                            $this.addClass("is-active-next");
+                        } else {
+                            $this.removeClass("is-active-next");
+                        }
+                    } else if (nextSlide == 0) {
+                        if (slickindex == slick.slideCount) {
+                            $this.addClass("is-active-next");
+                        } else {
+                            $this.removeClass("is-active-next");
+                        }
+                    } else {
+                        $this.removeClass("is-active-next");
+                    }
+                });
+            });
+
         });
+
 
 
 
