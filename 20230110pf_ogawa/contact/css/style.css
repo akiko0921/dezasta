@@ -101,6 +101,40 @@
     border: 2px solid rgb(255, 247, 209);
 }
 
+.back {
+    position: relative;
+    max-width: 160px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.back p {
+    position: absolute;
+    top: 19px;
+    font-size: 16px;
+    left: 60px;
+    letter-spacing: 0.2em;
+}
+
+.left_arrow {
+    width: 6px;
+    height: 6px;
+    border-right: solid 1px #515151;
+    border-top: solid 1px #515151;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 26px;
+    right: 120px;
+}
+
+.thanks_word {
+    padding-bottom: 50px;
+}
+
+body {
+    height: 100vh;
+}
+
 @media screen and (max-width: 767px) {
     .contact {
         display: block;
@@ -112,6 +146,25 @@
 
     .contact_right {
         width: 100%;
+    }
+
+    .back {
+        max-width: 120px;
+        padding-top: 0;
+        padding-bottom: 72px;
+    }
+
+    .back p {
+        top: 15px;
+        font-size: 12px;
+        left: 45px;
+    }
+
+    .left_arrow {
+        top: 20px;
+        right: 90px;
+        width: 4px;
+        height: 4px;
     }
 }
 

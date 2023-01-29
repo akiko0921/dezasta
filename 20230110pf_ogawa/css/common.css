@@ -143,10 +143,10 @@ footer {
 }
 
 .top {
-    width: 80px;
     position: fixed;
     bottom: 40px;
     right: 40px;
+    width: 80px;
 }
 
 .small {
