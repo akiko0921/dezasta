@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ogawa design</title>
     <meta name="description" content="デザインで人と人を結びつけられるように
     ひとつひとつの伝わり方を考えてデザインしていきます">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,145 +19,141 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>ogawa design</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <div class="header_wrap">
-            <h1 class="header_logo"><a href="index.html"><img src="image/logo@2x.png" alt="ogawa design"></a></h1>
-            <nav class="pc_nav">
-                <ul>
-                    <li><a href="works/index.html">Works</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#motif">Motif</a></li>
-                    <li><a href="#dairy">Dairy</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="sp_btn"><span></span></div>
-            <nav class="sp_nav">
-                <ul>
-                    <li><a href="works/index.html">Works</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#motif">Motif</a></li>
-                    <li><a href="#dairy">Dairy</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main_container">
-            <form
-                action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdh6K0KviPw8irY15_s8Go8Q8bQk1umIPYRl6hvd1JVRnPV-A/formResponse"
-                method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                <h2 class="item_logo">
-                    <img src="image/contact@2x.png" alt="contact">
-                </h2>
-                <p class="contact_word">当ポートフォリオサイトをご覧いただき<br class="sp_br">誠にありがとうございます<br>
-                    制作のご相談やご質問などございましたら<br class="sp_br">お気軽にご連絡くださいませ<br>
-                    お手数ですが 必須項目のご入力を<br class="sp_br">お願いいたします</p>
-                <div class="contact">
-                    <div class="contact_left">
-                        <div class="set">
-                            <label for="name">お名前</label>
-                            <p class="must">必須</p>
+    <div class="wrapper">
+        <header id="header">
+            <div class="header_wrap">
+                <h1 class="header_logo"><a href="../index.html"><img src="image/logo@2x.png" alt="ogawa design"></a>
+                </h1>
+                <nav class="pc_nav">
+                    <ul>
+                        <li><a class="underline" href="../works/index.html">Works</a></li>
+                        <li><a class="underline" href="../index.html#about">About</a></li>
+                        <li><a class="underline" href="../index.html#service">Service</a></li>
+                        <li><a class="underline" href="../index.html#motif">Motif</a></li>
+                        <li><a class="underline" href="../index.html#dairy">Dairy</a></li>
+                        <li><a class="underline" href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a class="underline" href="../works/index.html">Works</a></li>
+                        <li><a class="underline" href="../index.html#about">About</a></li>
+                        <li><a class="underline" href="../index.html#service">Service</a></li>
+                        <li><a class="underline" href="../index.html#motif">Motif</a></li>
+                        <li><a class="underline" href="../index.html#dairy">Dairy</a></li>
+                        <li><a class="underline" href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main_container">
+                <form
+                    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdh6K0KviPw8irY15_s8Go8Q8bQk1umIPYRl6hvd1JVRnPV-A/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                    <h2 class="item_logo">
+                        <img src="image/contact@2x.png" alt="contact">
+                    </h2>
+                    <p class="contact_word">当ポートフォリオサイトをご覧いただき<br class="sp_br">誠にありがとうございます<br>
+                        制作のご相談やご質問などございましたら<br class="sp_br">お気軽にご連絡くださいませ<br>
+                        お手数ですが 必須項目のご入力を<br class="sp_br">お願いいたします</p>
+                    <div class="contact">
+                        <div class="contact_left">
+                            <div class="set">
+                                <label for="name">お名前</label>
+                                <p class="must">必須</p>
+                            </div>
+                            <input id="name" type="text" required class="input" name="entry.653242920">
+                            <div class="set">
+                                <label for="mail" class="question">メールアドレス</label>
+                                <p class="must">必須</p>
+                            </div>
+                            <input id="mail" type="text" required class="input" name="entry.1386553747">
+                            <div class="set">
+                                <label for="tel">電話番号</label>
+                            </div>
+                            <input id="tel" type="text" class="input" name="entry.662347761">
                         </div>
-                        <input id="name" type="text" required class="input" name="entry.653242920">
-                        <div class="set">
-                            <label for="mail" class="question">メールアドレス</label>
-                            <p class="must">必須</p>
+                        <div class="contact_right">
+                            <div class="set">
+                                <label for="msg">お問い合わせ内容</label>
+                                <p class="must">必須</p>
+                            </div>
+                            <textarea name="entry.2062812092" required id="msg" cols="30" rows="10"
+                                class="textarea"></textarea>
                         </div>
-                        <input id="mail" type="text" required class="input" name="entry.1386553747">
-                        <div class="set">
-                            <label for="tel">電話番号</label>
-                        </div>
-                        <input id="tel" type="text" class="input" name="entry.662347761">
                     </div>
-                    <div class="contact_right">
-                        <div class="set">
-                            <label for="msg">お問い合わせ内容</label>
-                            <p class="must">必須</p>
-                        </div>
-                        <textarea name="entry.2062812092" required id="msg" cols="30" rows="10"
-                            class="textarea"></textarea>
-                    </div>
-                </div>
-                <button class="btn">内容を送信する</button>
-            </form>
-
-            <!-- <section>
-                <h2 class="item_logo">
-                    <img src="image/contact@2x.png" alt="contact">
-                </h2>
-                <p class="contact_word">当ポートフォリオサイトをご覧いただき<br class="sp_br">誠にありがとうございます<br>
-                    制作のご相談やご質問などございましたら<br class="sp_br">お気軽にご連絡くださいませ<br>
-                    お手数ですが 必須項目のご入力を<br class="sp_br">お願いいたします</p>
-                <div class="contact">
-                    <div class="contact_left">
-                        <div class="set">
-                            <p class="question">お名前</p>
-                            <p class="must">必須</p>
-                        </div>
-                        <div class="answer"></div>
-                        <div class="set">
-                            <p class="question">メールアドレス</p>
-                            <p class="must">必須</p>
-                        </div>
-                        <div class="answer"></div>
-                        <div class="set">
-                            <p>電話番号</p>
-                        </div>
-                        <div class="answer"></div>
-                    </div>
-                    <div class="contact_right">
-                        <div class="set">
-                            <p class="question">お問い合わせ内容</p>
-                            <p class="must">必須</p>
-                        </div>
-                        <div class="long_answer"></div>
-                    </div>
-                </div>
-                <div class="btn">内容を送信する</div>
-            </section> -->
-        </div>
-    </main>
+                    <button class="btn">内容を送信する</button>
+                </form>
+            </div>
+        </main>
 
 
-    <footer>
-        <div class="footer_wrap">
-            <div class="footer_logos">
-                <div class="footer_logo"><a href="index.html"><img src="image/logo@2x.png" alt="ogawa design"></a>
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_logos">
+                    <div class="footer_logo"><a href="../index.html"><img src="image/logo@2x.png"
+                                alt="ogawa design"></a>
+                    </div>
+                    <div class="small">
+                        <small>&copy;2022 ogawa design</small>
+                    </div>
                 </div>
-                <div class="small">
-                    <small>&copy;2022 ogawa design</small>
+                <div class="footer_nav">
+                    <ul>
+                        <li><a class="underline" href="../works/index.html">Works</a></li>
+                        <li><a class="underline" href="../index.html#about">About</a></li>
+                        <li><a class="underline" href="../index.html#service">Service</a></li>
+                        <li><a class="underline" href="../index.html#motif">Motif</a></li>
+                        <li><a class="underline" href="../index.html#dairy">Dairy</a></li>
+                        <li><a class="underline" href="index.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer_nav">
-                <ul>
-                    <li><a href="works/index.html">Works</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#motif">Motif</a></li>
-                    <li><a href="#dairy">Dairy</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
+            <div class="top">
+                <a href="#header"><img src="image/top@2x.png" alt="topへ"></a>
             </div>
-        </div>
-        <div class="top">
-            <a href="#header"><img src="image/top@2x.png" alt="topへ"></a>
-        </div>
-    </footer>
+        </footer>
 
-    <script type="text/javascript">
-        var submitted = false;
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='thanks.html';}"></iframe>
+        <script type="text/javascript">
+            var submitted = false;
 
+            $(function () {
+
+                $('.sp_btn, .sp_nav li').on('click', function () {
+                    $('.sp_nav').fadeToggle();
+                    $('.sp_btn').toggleClass('open');
+
+                });
+
+                $(window).scroll(function () {
+                    const windowHeight = $(window).height();
+                    const scroll = $(window).scrollTop();
+
+                    $('.element').each(function () {
+                        const targetPosition = $(this).offset().top;
+                        if (scroll > targetPosition - windowHeight + 100) {
+                            $(this).addClass("is-fadein");
+                        }
+                    });
+                });
+
+                $(window).on("load", function () {
+                    $('.wrapper').delay(600).fadeIn(1700);
+                });
+            });
+
+
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+            onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+    </div>
 </body>
 
 </html>

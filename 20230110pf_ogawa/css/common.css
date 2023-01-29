@@ -63,6 +63,10 @@ body {
     background-attachment: fixed;
 }
 
+.wrapper {
+    display: none;
+}
+
 /* ヘッダーnav */
 
 .header_wrap {
