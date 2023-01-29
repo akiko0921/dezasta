@@ -266,11 +266,11 @@
 
 /* デイリー */
 
-.dairy img {
+.daily img {
     padding: 0 10px;
 }
 
-.dairy {
+.daily {
     padding-bottom: 80px;
 }
 
@@ -461,11 +461,11 @@ footer {
 
     /* デイリー */
 
-    .dairy img {
+    .daily img {
         padding: 0 4px;
     }
 
-    .dairy {
+    .daily {
         padding-bottom: 40px;
     }
 }
