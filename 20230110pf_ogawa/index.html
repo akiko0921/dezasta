@@ -28,6 +28,9 @@
 </head>
 
 <body>
+    <div class="fv">
+        <div class="mizu"><img src="image/logomark@2x.png" alt=""></div>
+    </div>
     <div class="wrapper">
         <header id="header">
             <div class="header_wrap">
@@ -244,6 +247,10 @@
         <script>
             $(function () {
                 //ここの中に記述
+                $('.fv').addClass('is_active');
+                setTimeout(function () {
+                    $('.fv').fadeOut();
+                }, 7000);
 
                 $('.sp_btn, .sp_nav li').on('click', function () {
                     $('.sp_nav').fadeToggle();
@@ -346,13 +353,10 @@
                 });
 
                 $(window).on("load", function () {
-                    $('.wrapper').delay(600).fadeIn(1800);
+                    $('.wrapper').delay(7500).fadeIn(1800);
                 });
 
             });
-
-
-
 
         </script>
 

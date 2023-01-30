@@ -1,5 +1,63 @@
 @charset "utf-8";
 
+/* ファーストアニメーション */
+
+.fv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fv::before,
+.fv::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 10px;
+    background-color: #9f282c;
+    transition: 3s;
+    transition-delay: 3s;
+}
+
+.fv::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.fv::after {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.fv.is_active::before {
+    transform: translate(0);
+}
+
+.fv.fv.is_active::after {
+    transform: translate(0);
+}
+
+.mizu {
+    width: 13%;
+    animation: mizu_anime 2.5s ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes mizu_anime {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
 /* メインビジュアル */
 
 .main_visual {
@@ -486,6 +544,11 @@ footer {
 
     .daily {
         padding-bottom: 40px;
+    }
+
+    .fv::before,
+    .fv::after {
+        height: 4px;
     }
 }
 
