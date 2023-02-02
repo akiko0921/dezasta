@@ -273,6 +273,10 @@
     padding-bottom: 70px;
 }
 
+.works_border img {
+    border: 1px solid #ddd;
+}
+
 .works_subtitle_sp,
 .works_title_sp,
 .works_img_sp {

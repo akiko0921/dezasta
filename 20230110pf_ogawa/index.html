@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ogawa design</title>
-    <meta name="description" content="デザインで人と人を結びつけられるように
+    <title>ogawa design｜人と人を結びつけるデザイン
+    </title>
+    <meta name="description" content="ogawa designです。デザインで人と人を結びつけられるように
     ひとつひとつの伝わり方を考えてデザインしていきます">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="android-chrome-192x192.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
@@ -29,7 +28,7 @@
 
 <body>
     <div class="fv">
-        <div class="mizu"><img src="image/logomark@2x.png" alt=""></div>
+        <div class="mizu"><img src="image/logomark2@2x.png" alt=""></div>
     </div>
     <div class="wrapper">
         <header id="header">
@@ -241,127 +240,28 @@
             </div>
 
         </footer>
-
-
-
-        <script>
-            $(function () {
-                //ここの中に記述
-                $('.fv').addClass('is_active');
-                setTimeout(function () {
-                    $('.fv').fadeOut();
-                }, 7000);
-
-                $('.sp_btn, .sp_nav li').on('click', function () {
-                    $('.sp_nav').fadeToggle();
-                    $('.sp_btn').toggleClass('open');
-
-                });
-
-                $('.daily').slick({
-                    infinite: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    autoplay: 2000,
-                    centerMode: true,
-                    centerPadding: '7%',
-                    responsive: [
-                        {
-                            breakpoint: 1101,
-                            settings: {
-                                slidesToShow: 4,
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 3,
-                            }
-                        }, {
-                            breakpoint: 426,
-                            settings: {
-                                slidesToShow: 2,
-                                // centerMode: false,
-                            }
-                        }
-                    ]
-                });
-
-                $('.works_slider').slick({
-                    centerMode: true,
-                    centerPadding: '20%',
-                    slidesToShow: 3,
-                    dots: true,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    speed: 1000,
-                    infinite: true,
-                    variableWidth: true,
-                    arrows: true,
-                    responsive: [
-                        {
-                            breakpoint: 1101,
-                            settings: {
-                                slidesToShow: 3,
-                                centerPadding: '10%',
-                            }
-                        }, {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 3,
-                                centerPadding: '5%',
-                            }
-                        }
-                    ]
-                })
-
-                const $slider = $(".js-slider");
-
-                $slider.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
-                    $slider.find(".slick-slide").each((index, el) => {
-                        const $this = $(el),
-                            slickindex = $this.attr("data-slick-index");
-                        if (nextSlide == slick.slideCount - 1 && currentSlide == 0) {
-                            if (slickindex == "-1") {
-                                $this.addClass("is-active-next");
-                            } else {
-                                $this.removeClass("is-active-next");
-                            }
-                        } else if (nextSlide == 0) {
-                            if (slickindex == slick.slideCount) {
-                                $this.addClass("is-active-next");
-                            } else {
-                                $this.removeClass("is-active-next");
-                            }
-                        } else {
-                            $this.removeClass("is-active-next");
-                        }
-                    });
-                });
-
-                $(window).scroll(function () {
-                    const windowHeight = $(window).height();
-                    const scroll = $(window).scrollTop();
-
-                    $('.element').each(function () {
-                        const targetPosition = $(this).offset().top;
-                        if (scroll > targetPosition - windowHeight + 100) {
-                            $(this).addClass("is-fadein");
-                        }
-                    });
-                });
-
-                $(window).on("load", function () {
-                    $('.wrapper').delay(7500).fadeIn(1800);
-                });
-
-            });
-
-        </script>
-
     </div>
+    <script>
 
+        $(function () {
+
+            // アニメーション
+
+            $('.fv').addClass('is_active');
+            setTimeout(function () {
+                $('.fv').fadeOut();
+            }, 3700);
+
+
+            // ページがふわっと表示される
+
+            $('.wrapper').delay(3900).fadeIn(1800);
+        });
+
+
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

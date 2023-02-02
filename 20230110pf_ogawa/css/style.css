@@ -22,7 +22,7 @@
     height: 10px;
     background-color: #9f282c;
     transition: 3s;
-    transition-delay: 3s;
+    transition-delay: 0.5s;
 }
 
 .fv::before {
@@ -46,7 +46,7 @@
 .mizu {
     width: 13%;
     animation: mizu_anime 2.5s ease-in-out;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 @keyframes mizu_anime {
@@ -270,7 +270,7 @@
 
 .service {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .service_title p {
@@ -321,13 +321,13 @@
 }
 
 .motif_logo {
-    width: 130px;
+    width: 13%;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .motif_sen {
-    width: 709px;
+    width: 70.9%;
 }
 
 .motif_name p {
@@ -349,52 +349,6 @@
 
 .daily {
     padding-bottom: 80px;
-}
-
-/* フッター */
-
-footer {
-    background-image: url(../image/footerbg@2x.png);
-    background-repeat: repeat;
-}
-
-.footer_wrap {
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 0 40px 0;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.footer_logo {
-    max-width: 200px;
-}
-
-.footer_logos {
-    text-align: right;
-}
-
-.footer_nav ul {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.footer_nav ul li + li {
-    margin-left: 50px;
-}
-
-.top {
-    width: 80px;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-}
-
-.small {
-    font-size: 13px;
-    padding-top: 7px;
 }
 
 .aboutsp_img {
