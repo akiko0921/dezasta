@@ -95,19 +95,24 @@
         </div>
 
     </div>
-    <script src="../js/script.js">
-
+    <script src="../js/script.js"></script>
+    <script>
         $(function () {
-            $('main').css({ 'height': $(window).height() });
+            //     $('main').css({ 'height': $(window).height() });
+            // });
+
+
+            // $(window).on('resize', function () {
+            //     winH = $(window).height();
+            //     $('.box').outerHeight(winH);
+            var winH = $(window).height();
+            $('.main').outerHeight($(window).height());
+            $(window).on('resize', function () {
+                winH = $(window).height();
+                $('.main').outerHeight(winH)
+            })
+
         });
-
-
-        $(window).on('resize', function () {
-            winH = $(window).height();
-            $('.box').outerHeight(winH);
-        });
-
-
     </script>
 </body>
 
